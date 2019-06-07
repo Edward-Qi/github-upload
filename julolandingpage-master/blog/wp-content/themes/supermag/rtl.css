@@ -1,0 +1,431 @@
+body {
+    direction: rtl;
+}
+pre{
+    background: #eee none repeat scroll 100% 0;
+}
+table {
+    border-right: 1px solid #eee;
+    border-left: none;
+}
+th {
+    border-left: 1px solid #eee;
+    border-right: none;
+}
+td {
+    border-left: 1px solid #eee;
+    border-right: none;
+}
+blockquote:before {
+    right: -20px;
+    left: auto;
+}
+blockquote{
+    border-right: none;
+}
+.float-left{
+    float: right;
+}
+.float-right{
+    float: left;
+}
+i.fa{
+    margin-left: 5px;
+    margin-right: auto;
+}
+.main-navigation ul {
+    padding-right: 0;
+    padding-left: auto;
+}
+.main-navigation ul li {
+    border-width: 0 1px 0 0;
+    float: right;
+}
+.main-navigation ul ul {
+    float: right;
+    right: -999em;
+    left: auto;
+}
+.main-navigation ul ul ul {
+    right: -999em;
+    left: auto;
+}
+.main-navigation ul li:hover > ul {
+    right: auto;
+}
+.main-navigation ul ul li:hover > ul {
+    right: 100%;
+    left: auto;
+}
+.comment-navigation .nav-previous,
+.paging-navigation .nav-previous,
+.post-navigation .nav-previous {
+    float: right;
+}
+.comment-navigation .nav-next,
+.paging-navigation .nav-next,
+.post-navigation .nav-next {
+    float: left;
+    text-align: left;
+}
+.screen-reader-text:focus {
+    right: 5px;
+    left: auto;
+}
+.alignleft {
+    float: right;
+    margin-left: 1.5em;
+    margin-right: auto;
+}
+.alignright {
+    float: left;
+    margin-right: 1.5em;
+    margin-left: auto;
+}
+.tagcloud a {
+    margin-left: 4px;
+    margin-right: auto;
+}
+.comment-form-author input,
+.comment-form-email input{
+    float:right;
+}
+.comment-form-author input{
+    margin: 0 0 16px 29px;
+}
+.comment-list ul li {
+    padding-right: 20px;
+    padding-left: auto;
+}
+.comment-list ul ol,
+.comment-list ol ul,
+.comment-list ul ul,
+.comment-list ol ol{
+    margin-right: 0;
+}
+.comment-author img {
+    float: right;
+    margin: 0 0 0 20px;
+}
+.comment-list .fa.fa-clock-o {
+    margin-left: 3px;
+    margin-right: auto;
+}
+.bn-title, .bn-content a{
+    float: right;
+    padding: 0 13px 0 0;
+}
+.socials{
+    margin-right: 12px;
+    margin-left: auto;
+}
+.socials a{
+    padding-right: 10px;
+    padding-left: auto;
+}
+.header-ainfo.float-right {
+    text-align: left;
+}
+.right-logo-left-ainfo .site-logo.float-left{
+    float: left;
+    text-align: left;
+}
+.right-logo-left-ainfo .header-ainfo.float-right {
+    float: right;
+    text-align: right;
+}
+.home-icon {
+    float: right;
+    margin-right: -7px;
+    margin-left: auto;
+}
+.header-wrapper #site-navigation{
+    box-shadow: 1px -5px 0 -1px #393939 inset;
+}
+.header-wrapper .menu > li.current-menu-item > a:before,
+.header-wrapper .menu > li.current-menu-parent > a:before,
+.header-wrapper .menu > li.current_page_parent > a:before,
+.header-wrapper .menu > li.current_page_ancestor > a:before{
+    right: 0;
+    left: auto;
+}
+.acmethemes-nav ul li.menu-item-has-children::after {
+    left: 3px;
+    right: auto;
+}
+.search-block{
+    float: left;
+}
+.search-block input#menu-search,
+.widget_search input#s{
+    padding: 2px 8px 2px 23px;
+}
+.search-block #searchsubmit,
+.widget_search #searchsubmit{
+    left: 7px;
+    right: auto;
+}
+.icon-menu {
+    float: left;
+}
+.menu-search-toggle {
+    left: 0;
+    right: auto;
+}
+.menu-search-inner{
+    left: 0;
+    right: auto;
+}
+.search-block,.random-post{
+    float: left;
+}
+@media screen and (max-width:992px){
+    /*** HEADER ***/
+    .header-main-menu {
+        padding-left: 40px;
+        padding-right: auto;
+    }
+    .slicknav_btn:before {
+        right: 3px;
+        left: auto;
+    }
+    .slicknav_btn {
+        float: left;
+        left: 5px;
+        right: auto;
+    }
+    .slicknav_nav li{
+        padding: 0 12px 0 0;
+    }
+    .slicknav_menu .slicknav_arrow {
+        float: left;
+    }
+    .header-wrapper .main-navigation .slicknav_nav ul.sub-menu,
+    .header-wrapper .main-navigation .slicknav_nav ul.children {
+        right: 0;
+        left: auto;
+    }
+    .header-wrapper .menu-right .slicknav_btn{
+        right: auto;
+        left: 10px;
+    }
+}
+.footer-columns .footer-sidebar{
+    padding-left: 10px;
+    padding-right: auto;
+}
+.footer-columns .footer-sidebar:last-child{
+    padding-left: 0;
+    padding-right: auto;
+}
+@media screen and (max-width:992px){
+    .featured-post{
+        margin: 0 3% 16px 0;
+    }
+}
+.slider-section {
+    float: right;
+}
+.slider-section .bx-wrapper .bx-viewport{
+    right:0;
+    left: auto;
+}
+.slider-section .bx-wrapper img{
+    float: right;
+}
+.slider-section .slider-desc{
+    right: 0;
+    left: auto;
+}
+.slider-section .above-slider-details{
+    padding-right: 0;
+    margin-right: 9px;
+    padding-left: auto;
+    margin-left: auto;
+}
+.slider-section .bx-controls-direction{
+    left: 27px;
+    right: auto;
+}
+.slider-section .bx-controls-direction a{
+    padding-right: 8px;
+    padding-left: auto;
+}
+.slider-section .bx-controls-direction a.bx-next{
+    margin-right: 8px;
+    padding-right: 10px;
+    margin-left: auto;
+    padding-left: auto;
+}
+.slider-section .cat-links{
+    margin-right: 15px;
+    margin-left: auto;
+}
+.default-content .slide-caption{
+    padding-right: 15px;
+    padding-left: auto;
+}
+.besides-slider{
+    float: left;
+}
+.besides-slider .besides-slider-left,
+.besides-slider .besides-slider-right{
+    float: right;
+}
+.besides-slider .beside-post{
+    float: right;
+    margin:0 15px 15px 0;
+}
+.besides-slider .overlay{
+    right: 0;
+    left: auto;
+}
+.besides-slider .beside-thumb img{
+    float: right;
+}
+.besides-slider .beside-caption{
+    right: 0;
+    left: auto;
+}
+.besides-slider .beside-caption .post-date i{
+    margin-right: 5px;
+    margin-left: 4px
+}
+@media (max-width: 1229px) {
+    .besides-slider .beside-post{
+        margin:0 3% 15px 0;
+    }
+}
+.right-sidebar #primary{
+    float: right;
+}
+.right-sidebar .secondary-sidebar{
+    float: left;
+}
+/*** LEFT-SIDEBAR ***/
+.left-sidebar #primary{
+    float: left;
+}
+.left-sidebar .secondary-sidebar{
+    float: right;
+}
+.widget-title:before,
+.page-header .page-title:before,
+.single .entry-header .entry-title:before,
+.page .entry-header .entry-title:before {
+    right: 0;
+    left: auto;
+}
+li ul,
+li ol {
+    margin-right: 10px;
+    margin-left: auto;
+}
+.acme-col-3 {
+    float: right;
+}
+.above-entry-meta a{
+    margin-left: 4px;
+    margin-right: auto;
+}
+.above-entry-meta i{
+    margin-left: 2px;
+    margin-right: auto;
+}
+.above-entry-meta > span {
+    margin-left: 5px;
+    margin-right: auto;
+}
+.featured-desc .above-entry-meta{
+    padding-right: 0;
+    padding-left: auto;
+}
+.featured-entries-col .widget-image,
+.post-thumb{
+    float: right;
+    margin: 0 0 0 15px ;
+}
+.supermag-home.sm-col-post-type-2 .featured-post-main,
+.supermag-home.sm-col-post-type-2 .sm-col-post-type-2-beside {
+    float: right;
+}
+.single-thumb {
+    float: right;
+}
+.posted-on,
+.cat-links,
+.comments-link,
+.edit-link {
+    margin-left: 15px;
+    margin-right: auto;
+}
+.related-post {
+    border-right: 1px solid #e3e3e3;
+    border-left: none;
+    float: left;
+    padding: 0 14px 20px 0;
+}
+.single .single-feat{
+    float: right;
+    padding-left: 15px;
+    padding-right: auto;
+}
+article.post .post-thumb {
+    float: right;
+    margin-left: 10px;
+    margin-right: auto;
+}
+.comments-link,
+.edit-link{
+    border-right: 1px solid #cccccc;
+    margin-right: 12px;
+    padding-right: 10px;
+    border-left: none;
+    margin-left: auto;
+    padding-left: auto;
+}
+.entry-content ul{
+    padding-right: 20px;
+    padding-left: auto;
+}
+.entry-content ul ol,
+.entry-content ol ul,
+.entry-content ul ul,
+.entry-content ol ol{
+    margin-right: 0;
+    margin-left: auto;
+}
+.nav-next {
+    float: left;
+}
+.blog-no-image article .entry-content{
+    padding:0 0 0 2%;
+}
+.breadcrumb {
+    float: right;
+}
+.breadcrumb::after {
+    border-right: 5px solid #66CCFF;
+    border-left: none;
+}
+.breadcrumb::after {
+    left: -5px;
+    right: auto;
+}
+#supermag-breadcrumbs .breadcrumb-trail li {
+    float: right;
+    padding: 5px 10px 5px 0;
+}
+#supermag-breadcrumbs .breadcrumb-trail li::after {
+    margin-right: 10px;
+    margin-left: auto;
+}
+/*Slider*/
+.slider-section,
+.bx-wrapper {
+    direction: ltr;
+}
+.bx-wrapper .bx-prev {
+    right: 10px;
+    left: auto;
+}

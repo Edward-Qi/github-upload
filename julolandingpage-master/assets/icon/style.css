@@ -1,0 +1,182 @@
+@font-face {
+  font-family: 'JULO-icon';
+  src:  url('fonts/JULO-icon.eot?gwqtf4');
+  src:  url('fonts/JULO-icon.eot?gwqtf4#iefix') format('embedded-opentype'),
+    url('fonts/JULO-icon.ttf?gwqtf4') format('truetype'),
+    url('fonts/JULO-icon.woff?gwqtf4') format('woff'),
+    url('fonts/JULO-icon.svg?gwqtf4#JULO-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'JULO-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon_people:before {
+  content: "\e900";
+  color: #13637b;
+}
+.icon-icon_flash:before {
+  content: "\e901";
+  color: #0694c9;
+}
+.icon-icon_cross:before {
+  content: "\e902";
+  color: #ffffff;
+}
+.icon-icon_tick:before {
+  content: "\e903";
+  color: #5e5e5e;
+}
+.icon-icon_arrow_left:before {
+  content: "\e904";
+  color: #ffffff;
+}
+.icon-icon_arrow_up:before {
+  content: "\e905";
+  color: #ffffff;
+}
+.icon-icon_arrow_right:before {
+  content: "\e906";
+  color: #ffffff;
+}
+.icon-icon_arrow_down:before {
+  content: "\e907";
+  color: #ffffff;
+}
+.icon-icon_done:before {
+  content: "\e908";
+  color: #00acf0;
+}
+.icon-icon_phone:before {
+  content: "\e909";
+  color: #5e5e5e;
+}
+.icon-icon_internet:before {
+  content: "\e90a";
+  color: #5e5e5e;
+}
+.icon-icon_search:before {
+  content: "\e90b";
+  color: #ffffff;
+}
+.icon-icon_home:before {
+  content: "\e90c";
+  color: #5e5e5e;
+}
+.icon-icon_question:before {
+  content: "\e90d";
+  color: #5e5e5e;
+}
+.icon-icon_information:before {
+  content: "\e90e";
+  color: #5e5e5e;
+}
+.icon-icon_letter:before {
+  content: "\e90f";
+  color: #5e5e5e;
+}
+.icon-icon_map:before {
+  content: "\e910";
+  color: #5e5e5e;
+}
+.icon-icon_collaborate:before {
+  content: "\e911";
+  color: #13637b;
+}
+.icon-icon_documents:before {
+  content: "\e912";
+  color: #5e5e5e;
+}
+.icon-icon_edit:before {
+  content: "\e913";
+  color: #00acf0;
+}
+.icon-icon_in:before {
+  content: "\e914";
+  color: #5e5e5e;
+}
+.icon-icon_out:before {
+  content: "\e915";
+  color: #5e5e5e;
+}
+.icon-icon_money:before {
+  content: "\e916";
+  color: #5e5e5e;
+}
+.icon-icon_credit_card:before {
+  content: "\e917";
+  color: #5e5e5e;
+}
+.icon-icon_smartphone:before {
+  content: "\e918";
+  color: #5e5e5e;
+}
+.icon-icon_wifi:before {
+  content: "\e919";
+  color: #5e5e5e;
+}
+.icon-icon_create:before {
+  content: "\e91a";
+  color: #00acf0;
+}
+.icon-icon_rocket:before {
+  content: "\e91b";
+  color: #5e5e5e;
+}
+.icon-icon_smile:before {
+  content: "\e91c";
+  color: #5e5e5e;
+}
+.icon-icon_protect:before {
+  content: "\e91d";
+  color: #5e5e5e;
+}
+.icon-icon_design:before {
+  content: "\e91e";
+  color: #5e5e5e;
+}
+.icon-icon_account:before {
+  content: "\e91f";
+  color: #5e5e5e;
+}
+.icon-icon_gear:before {
+  content: "\e920";
+  color: #5e5e5e;
+}
+.icon-icon_analytic:before {
+  content: "\e921";
+  color: #5e5e5e;
+}
+.icon-icon_star:before {
+  content: "\e922";
+  color: #0b80a9;
+}
+.icon-icon_game:before {
+  content: "\e923";
+  color: #db4d3d;
+}
+.icon-icon_idea:before {
+  content: "\e924";
+  color: #5f3b8e;
+}
+.icon-icon_product:before {
+  content: "\e925";
+  color: #5e5e5e;
+}
+.icon-icon_service:before {
+  content: "\e926";
+  color: #5e5e5e;
+}

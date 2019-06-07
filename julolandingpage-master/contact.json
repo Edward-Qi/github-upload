@@ -1,0 +1,5 @@
+{
+  "label": "Hubungi kami",
+  "text": "via WhatsApp di 082211127334",
+  "action_url": "https://api.whatsapp.com/send?phone=6282211127334"
+}

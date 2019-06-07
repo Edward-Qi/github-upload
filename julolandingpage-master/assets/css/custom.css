@@ -1,0 +1,205 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.whatsapp-txt {
+    text-align: center;
+}
+.Sign-Document-Copy {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+.jumbotron{
+    background-image: linear-gradient(to bottom, #00acf0, #00a1de, #0096cc, #038bba, #038bba);
+    min-height: 275px;
+    margin-bottom: 85px;
+}
+.jumbotron .header h2{
+    font-size: 32px;
+    text-align: center;
+    color: #fff;
+    margin-top: 55px;
+}
+.jumbotron .logo{
+    position: relative;
+    float: left;
+    margin-top: 25px;
+}
+.billing-container{
+    margin: 15px 0 50px 0;
+}
+.billing-container h3{
+    font-size: 24px;
+    color: #5e5e5e;
+    font-weight: bold;
+    text-align: center;
+    padding: 25px 0;
+}
+.billDetails{
+    background: #f6f6f6;
+    padding: 5px 10px;
+    min-height: 65px;
+}
+.billDetails label{
+    font-size: 10px;
+    display: inline-block;
+    float: left;
+    margin: 8px 0 0 0;
+}
+.billDetails p{
+    font-size: 15px;
+    display: inline-block;
+    margin: 0;
+    float: left;
+    clear: both;
+}
+.billDetails span{
+    float: right;
+}
+.accordian-outer{
+    width: 500px;
+    margin: 30px auto;
+}
+.accordian-outer .accordion .accordion-group .accordion-heading{
+    background-image: linear-gradient(to right, #00acf0, #09a3e9, #129ae1, #1991d9, #1f88d1);
+    color:#fff;
+    padding: 15px;
+    border-radius: 7px;
+}
+.accordian-outer .accordion .accordion-group .accordion-heading a{
+    color: #fff;
+    display: block;
+}
+.accordian-outer .accordion .accordion-group .accordion-heading a:hover, .accordian-outer .accordion .accordion-group .accordion-heading a:focus{
+    text-decoration: none;
+}
+.accordian-outer .accordion .accordion-group{
+    margin-bottom: 15px;
+}
+ .accordion-toggle .fas{
+     float: right;
+ }
+ .accordion-toggle.collapsed{
+     background-image: url("../img/angle-right-solid.svg");
+     background-repeat: no-repeat;
+     background-position: right center;
+ }
+ .accordion-toggle{
+    background-image: url("../img/angle-down-solid.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+ }
+
+/* .accordion-toggle::after {
+    font-family:'Font Awesome 5 Free';
+    content: "\f105";    
+    float: right;
+    display: block;
+}
+.accordion-opened .accordion-toggle::after {    
+    content: "\f105";     */
+}
+.accordion-toggle .fas{
+    float: right;
+    margin-top: 5px;
+}
+
+.accordion-body{
+    padding: 15px;
+}
+.info-buton{
+    width:500px;
+    margin: 20px auto;
+    display: block;
+    border: 2px solid #00acf0;
+    border-radius: 5px;
+    color: #00acf0;
+    padding:10px 0;
+    font-weight: bold;
+}
+.info-buton:hover{
+    background:#00acf0;
+    color: #fff;
+}
+.accordion button{
+    margin: 20px 0;
+}
+.footer-top{
+    padding: 2rem 2rem 0 2rem;
+}
+.footer-area{
+    padding: 4rem 2rem;
+}
+.footer-area p{
+    font-size: 12px;
+    color: #5e5e5e;
+}
+.footer-conent{
+    width: 813px;
+}
+.copyright{
+    font-size: 10px;
+    padding: 20px 0;
+    margin-top: 20px;
+    border-top: 1px solid #e5e5e5;
+}
+.footer{
+    background-image: url("../img/kota.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: #000;
+}
+@media only screen and (max-width: 813px){
+    .footer-conent{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .container p{
+        font-size: 12px;
+    }
+    .jumbotron{
+        padding: 0.5rem 2rem;
+        border-radius: 0;
+        margin-bottom: 30px;
+        min-height: 75px;
+    }
+    .jumbotron .logo {
+        position: unset;
+        margin: 0 auto;
+        width: 100%;
+        margin-top: 0;
+    }
+    .logo img{
+        display: block;
+        width: 85px;
+        margin-top: 10px;
+    }
+    .info-buton{
+        width:100%;
+    }
+    .billDetails span{
+        font-size: 12px;
+    }
+    .accordian-outer{
+        width:100%;
+    }
+    .accordian-outer .accordion .accordion-group .accordion-heading a{
+        font-size: 14px;
+    }
+    .header{
+        display: none;
+    }
+    .footer-area {
+        padding: 2rem;
+    }
+    .logo-footer, .copyright, .footer-area{
+        text-align: center;
+    }
+    .logo-footer img{
+        width: 100px;
+    }
+    .footer-conent{
+        text-align: left;
+    }
+}

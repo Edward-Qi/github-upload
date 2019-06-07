@@ -1,0 +1,659 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Loan Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        .aligntext p {
+            display: flex;
+        }
+
+        div#preloader {
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 999;
+            width: 100%;
+            height: 100%;
+            overflow: visible;
+            background: #333 url('/assets/images/loading.gif') no-repeat center center;
+
+        }
+
+        body {
+            text-align: center;
+            font: 13px verdana;
+        }
+
+        body,
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        table#loaninfo {
+            text-align: left;
+            margin-top: 15%;
+            border: 1px solid #cacaca;
+            padding: 0;
+            line-height: 40px;
+            display: inline-block;
+
+        }
+
+        td,
+        th {
+            padding: 0 15px;
+
+        }
+
+        th {
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        tr:nth-child(even) {
+            background: #cacaca;
+        }
+
+        #agreement_action {
+            color: #00acf0;
+            text-decoration: underline;
+        }
+    </style>
+    <link rel="stylesheet" href="/assets/tether/tether.min.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="/assets/dropdown/css/style.css">
+    <link rel="stylesheet" href="/assets/animatecss/animate.min.css">
+    <link rel="stylesheet" href="/assets/socicon/css/styles.css">
+    <link rel="stylesheet" href="/assets/theme/css/style.css">
+    <link rel="stylesheet" href="/assets/theme/css/detail.css">
+    <link rel="stylesheet" href="/assets/additionalcss/css/additional.css" type="text/css">
+    <link rel="stylesheet" href="/assets/icon/style.css">
+</head>
+
+<body>
+    <header class="menu cid-qLAH6tXQHY" once="menu" id="menu2-h">
+
+
+
+        <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-toggleable-sm bg-color transparent">
+
+            <div class="menu-logo">
+                <div class="navbar-brand">
+                    <span class="navbar-logo">
+                        <a href="/index.html">
+                            <img src="/assets/vector/pinjaman_JULO_logo_white.svg" alt="Logo Pinjaman JULO Putih" title=""
+                                style="height: 4.9rem;">
+
+                        </a>
+                    </span>
+
+                </div>
+            </div>
+
+        </nav>
+        <h1 id="heading_id">Surat Peringatan</h1>
+    </header>
+
+    <div id="preloader"></div>
+    <div id="summary_content">
+        <div class="content_wrpr page_content showcontent" id="summary">
+            <div class="container container_align">
+                <div class="top_content">
+                    <h2>Surat Peringatan II</h2>
+                    <div class="position_cls">
+                        <div class="name_details">
+                            <div class="inner">
+                                <p>
+                                    <span class="left_sec">
+                                        Nomor
+                                    </span>
+                                    <span class="right_sec ">
+                                        <span class="application_xid"></span> - 2
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <span class="left_sec">
+                                        Lampiran
+                                    </span>
+                                    <span class="right_sec">
+                                        1 (satu) lembar
+                                    </span>
+                                </p>
+
+                                <p>
+                                    <span class="left_sec">
+                                        Perihal
+                                    </span>
+                                    <span class="right_sec">
+                                        Surat Peringatan Kedua
+
+                                    </span>
+                                </p>
+                                <p>
+
+                                    <span class="right_sec_p">
+
+                                        <b>Mohon ditindak lanjuti selambat-lambatnya 7 (tujuh) x 24 jam sejak tanggal
+                                            surat ini
+
+                                        </b>
+                                    </span>
+                                </p>
+
+
+                            </div>
+                        </div>
+                        <div class="date_info">
+                            <div class="inner">
+                                <span class="place">Jakarta, </span>
+                                <span class="date generated_date date_convert"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bottom_details">
+                        <p>Kepada Yth.</p>
+                        <h6> <span class="full_name"></span></h6>
+                    </div>
+                </div>
+                <div class="mid_content">
+                    <p>Dengan Hormat,</p>
+                    <p>
+                        Untuk dan atas nama PT. Julo Teknologi Finansial, selaku perwakilan dari Perusahaan Pemberi
+                        Pinjaman, dengan ini Kami menyampaikan Peringatan Kedua kepada Saudara sebagai berikut :
+
+                    </p>
+                    <ol>
+                        <li>
+                            Bahwa Saudara telah membuat suatu pengikatan pinjam-meminjam berbasis teknologi dengan Kami
+                            dengan nomor Surat Perjanjian Hutang Piutang (“SPHP”) <span class="application_xid"></span>
+                            pada tanggal <span class="sphp_accepted_ts date_convert"></span> (<a id="agreement_action">terlampir
+                                bersama surat ini</a>.) ;
+                        </li>
+                        <li> Bahwa Saudara tidak melaksanakan isi surat peringatan Kami yang pertama yang sudah jatuh
+                            waktu pada tanggal <span class="date_before"></span> ;</li>
+                        <li> Bahwa sebagai bentuk upaya perbaikan kredit Anda serta itikad baik dalam pelaksanaan
+                            seluruh hak Kami yaitu dengan melakukan penagihan seperti melakukan panggilan melalui
+                            telepon, email, sms serta segala bentuk upaya membantu meringankan kewajiban Anda sampai
+                            dengan memberikan langkah restrukturisasi kredit kepada Anda, namun sampai dengan saat ini
+                            Kami belum menerima tanggapan apapun dari Saudara maupun pelunasan atas seluruh jumlah
+                            tunggakan Saudara berikut dengan bunga dan denda keterlambatan yaitu sebesar <b>Rp. </b>
+                            <span class="total_sum cash"></span>
+                            sejak tanggal <span class="not_payed_start date_convert"></span> s/d hari ini
+                            sebagaimana Kami meminta Saudara untuk melakukan pelunasan tersebut pada surat peringatan
+                            Kami terdahulu ;
+                        </li>
+                        <li>
+                            Bahwa perlu Kami tegaskan, Kami berhak atas pembayaran sebagaimana yang telah disepakati
+                            bersama dalam SPHP yang disebut diatas dan Saudara tidak berhak untuk menahan pembayaran
+                            ataupun ingkar terhadap segala kewajiban Saudara, yang untuk itu kembali Kami berikan surat
+                            peringatan kedua kepada Saudara dimana dalam jangka waktu 7 (tujuh) x 24 jam sejak tanggal
+                            surat ini diterima oleh Saudara, Saudara akan melakukan pelunasan tunggakan dan mengirimkan
+                            bukti pembayaran kepada Kami melalui email korespondensi Kami collections@julo.co.id atau
+                            Whatsapp CS di 082211127334.
+                        </li>
+
+                    </ol>
+
+                </div>
+
+
+
+                <div class="bottom_content">
+                    <div class="row_div">
+                        <div class="left_box">
+                            <div class="bx_inner">
+                                <h4>Berikut Informasi pembayaran</h4>
+
+                                <h6>Bank Penerima</h6>
+                                <h5><span class="julo_bank_name"></span></h5>
+                                <h6>Kode Bank </h6>
+                                <h5><span class="bank_code"></span></h5>
+                                <h6>Nomor Rekening</h6>
+                                <h5><span class="julo_bank_account_number account_format"></span></h5>
+
+                                <h6>Total yang harus dibayar</h6>
+                                <h5>Rp. <span class="total_sum cash"></span></h5>
+                                <!--<h5>Atau</h5> 
+					  <h6>Gerai Retail/Tunai</h6>
+                      <h5 class="payment_method_name"></h5>
+					  <h6>Kode Pembayaran</h6>
+                      <h5 class="virtual_account"></h5>
+					  <h6>Total yang harus dibayar</h6>
+                      <h5 class="due_amount_sum cash"></h5>-->
+
+                            </div>
+                        </div>
+
+                        <div class="right_box">
+
+                            <p>
+                                Kami himbau Saudara untuk mempergunakan waktu yang Kami berikan ini untuk mempersiapkan
+                                dan melakukan pelunasan. Tanpa ada tindak lanjut dari Saudara, beban kewajiban akan
+                                bertambah dan Kami akan mengambil tindakan tegas selanjutnya sesuai dengan peraturan
+                                yang telah ditetapkan oleh OJK dan Perundang-undangan Indonesia. Mohon abaikan surat
+                                peringatan ini jika telah melakukan pelunasan tunggakan
+                            </p>
+                            <p>
+                                Demikian disampaikan untuk menjadi perhatian Saudara.
+                            </p>
+                            <div class="signature">
+                                <img src="/assets/images/signature.jpg" />
+                            </div>
+                            <div class="bottom_text">
+                                <p>Departemen Hukum</p>
+                                <p>PT. Julo Teknologi Finansial</p>
+
+                                <p>legal.dept@julo.co.id </p>
+                                <p>Berdasarkan Kuasa dari Perusahaan Pemberi Pinjaman</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Slide 2 -->
+    <div class="content_wrpr_inner page_content" id="originalAgreement">
+        <div class="bread_crumb">
+            <div class="container">
+                <a id="warning_action">Surat Peringatan</a>
+                <span>> Surat Perjanjian Hutang Piutang</span>
+            </div>
+        </div>
+        <div class="container">
+            <div id="MTL1" class="product_type_content">
+                <div class="bottom_details">
+                    <h2>Surat Perjanjian Hutang Piutang Nomor <span class="application_xid"></span></h2>
+
+                    <p>Surat Perjanjian Hutang Piutang ini dibuat dan disetujui pada hari ini, tanggal <span class="sphp_accepted_ts date_convert"></span>
+                        oleh dan
+                        antara:</p>
+                    <ol>
+                        <li>
+                            Pemberi Pinjaman yang diwakilkan oleh PT JULO TEKNOLOGI FINANSIAL (selanjutnya disebut
+                            “<b>JULO</b>”) sebagai penyelenggara Layanan Pinjam Meminjam Uang Berbasis Teknologi
+                            Informasi,
+                            sesuai dengan Peraturan OJK No.77/POJK.01/2016;
+                        </li>
+                        <li>
+                            Penerima Pinjaman yang ber-identitas sebagai berikut:
+                            <div class="detail_info">
+                                <div class="inner aligntext">
+                                    <p>
+                                        <span class="left_sec">
+                                            <b>Nama:</b>
+                                        </span>
+                                        <span class="right_sec full_name">
+
+                                        </span>
+                                    </p>
+
+                                    <p>
+                                        <span class="left_sec ">
+                                            <b>Tgl. lahir:</b>
+                                        </span>
+                                        <span class="right_sec dob date_convert">
+
+                                        </span>
+                                    </p>
+
+                                    <p>
+                                        <span class="left_sec ">
+                                            <b>No. KTP:</b>
+                                        </span>
+                                        <span class="right_sec ktp">
+
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <span class="left_sec">
+                                            <b>No. Telpon:</b>
+                                        </span>
+                                        <span class="right_sec phone">
+
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <span class="left_sec">
+                                            <b>Alamat:</b>
+                                        </span>
+                                        <span class="right_sec full_address">
+
+                                        </span>
+                                    </p>
+
+
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+
+
+                <div class="mid_content">
+                    <p> Penerima Pinjaman menyatakan setuju untuk mengikatkan diri kepada JULO atas ketentuan-ketentuan
+                        sebagai berikut:</p>
+                    <ol>
+                        <li>
+                            Bahwa Penerima Pinjaman mengajukan permohonan dengan nomor perjanjian pinjaman
+                            <span class="application_xid"></span> melalui JULO, dan telah disetujui pinjaman uang tunai
+                            sebesar <b>Rp. </b><span class="amount cash"></span>
+                            (“Pinjaman”), dengan biaya provisi sebesar <b>Rp. </b><span class="provision_fee cash"></span>
+                            dan suku bunga
+                            <span class="interest_percent_monthly"></span>.
+                        </li>
+                        <li>
+                            Bahwa saya berjanji untuk melunasi pinjaman dengan melakukan pembayaran sesuai dengan
+                            jadwal
+                            berikut ini:
+                            <div class="table_content" id="payment_table">
+                                <div class="repeat repeat_head">
+                                    <div class="re_bx left_cont">Cicilan</div>
+                                    <div class="re_bx mid_cont">Jumlah</div>
+                                    <div class="re_bx right_cont">Jatuh Tempo </div>
+                                </div>
+
+
+                            </div>
+                        </li>
+                        <li>
+                            Bahwa Penerima Pinjaman akan melakukan pembayaran setiap bulan sebelum tanggal jatuh tempo.
+                            Keterlambatan akan dikenakan biaya denda sebesar <b>Rp.</b><span class="late_fee_amount cash"></span>
+                            per bulan, untuk setiap
+                            angsuran yang terlambat, sampai dengan satu tahun.
+                        </li>
+                        <li>
+                            Bahwa pembayaran setiap bulan akan dilakukan ke rekening Virtual Account (VA) sebagai
+                            berikut:
+                            <div class="bank_details">
+                                <div class="inner">
+                                    <p>
+
+                                        <p class="julo_bank_name">
+
+                                        </p>
+                                    </p>
+
+                                    <p>
+                                        <span class="left_sec">
+                                            Kode Bank
+                                        </span>
+                                        <span class="right_sec">
+                                            <span class="bank_code">
+                                            </span>
+                                    </p>
+
+                                    <p>
+                                        <span class="left_sec">
+                                            Nomor VA 
+                                        </span>
+                                        <span class="right_sec">
+                                            <span class="julo_bank_account_number account_format"></span>
+                                        </span>
+                                    </p>
+
+
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                    <p>
+                        Penerima Pinjaman mengerti bahwa JULO sebagai platform yang bertindak sesuai dengan surat
+                        perjanjian diberikan kuasa untuk menerima informasi nasabah,
+                        menggunakan informasi tersebut untuk melakukan verifikasi dan/atau tinjau kelayakan sesuai
+                        dengan
+                        kriteria yang telah ditetapkan, menginformasikan hasil pengajuan, dan memberikan reminder
+
+                        pembayaran/ penagihan atas jumlah terhutang, baik dilakukan oleh pihak JULO sendiri maupun
+                        melalui
+                        agen.
+                    </p>
+                    <p>
+                        Penerima Pinjaman dan JULO mengerti atas hak dan kewajiban masing-masing pihak, sesuai dengan
+                        yang tertuang pada <a href="/terms-and-conditions.html">Syarat &amp; Ketentuan </a> khususnya
+                        Pasal 7-9, dan akan senantiasa mematuhi ketentuan
+                        hukum yang berlaku dalam melaksanakan Perjanjian ini.
+                    </p>
+                    <p>
+                        Sengketa yang mungkin timbul dari penafsiran dan/atau pelaksanaan Perjanjian ini akan
+                        diselesaikan
+                        melalui musyawarah untuk mencapai mufakat antara kedua belah pihak, atau melalui jalur hukum
+                        yuridiksi Pengadilan Negeri Jakarta Selatan Republik Indonesia atau pengadilan manapun di
+                        setiap
+                        yuridiksi yang kompeten.
+                    </p>
+                    <p>Perjanjian ini adalah sah dan mengikat sesuai dengan ketentuan peraturan perundang-undangan yang
+                        berlaku, dan Penerima Pinjaman menandatangani secara sadar dan tanpa paksaan dari pihak
+                        manapun.</p>
+                </div>
+            </div>
+
+            <div class="new_content_sec product_type_content" id="STL1" style="display:none">
+                <p>
+                    Pada hari ini, <span class="bold_txt sphp_accepted_ts date_convert"></span>, saya yang bertanda
+                    tangan di bawah
+                    ini:
+                </p>
+                <div class="bank_details">
+                    <div class="inner">
+                        <p>
+                            <span class="left_sec">
+                                Name
+                            </span>
+                            <span class="right_sec full_name">
+
+                            </span>
+                        </p>
+
+                        <p>
+                            <span class="left_sec">
+                                Tgl.lahir
+                            </span>
+                            <span class="right_sec">
+                                <span class="dob date_convert"></span>
+                            </span>
+                        </p>
+
+                        <p>
+                            <span class="left_sec">
+                                No. KTP
+                            </span>
+                            <span class="right_sec ktp">
+
+                            </span>
+                        </p>
+                        <p>
+                            <span class="left_sec">
+                                No. telpon
+                            </span>
+                            <span class="right_sec  phone">
+
+                            </span>
+                        </p>
+                        <p>
+                            <span class="left_sec">
+                                Alamat
+                            </span>
+                            <span class="right_sec ktp full_address">
+
+                            </span>
+                        </p>
+
+                    </div>
+                </div>
+                <p>
+                    Menyatakan bahwa saya menyetujui dengan pihak <span class="bold_txt">PT. JULO TEKNOLOGI FINANSIAL</span>
+                    (selanjutnya disebut
+                    JULO) atas
+                    ketentuan-ketentuan perjanjian sebagai berikut:</p>
+                <ol>
+                    <li>
+                        Bahwa saya mengajukan permohonan pinjaman dengan nomor pinjaman <span class="bold_txt application_xid"></span>
+                        melalui
+                        pihak
+                        JULO, dan telah disetujui pinjaman uang tunai sebesar <b>Rp.</b><span class="amount cash"></span>
+                        kepada saya.
+                    </li>
+                    <li> Bahwa saya berjanji untuk melunasi pinjaman dengan melakukan pembayaran kepada pihak JULO
+                        sebesar <b>Rp. </b><span class="installment_amount cash"></span> sebelum jatuh tempo pada
+                        tanggal <span id="min_due_date" class="date_convert"></span>.</li>
+                    <li> Bahwa jika saya terlambat melunasi pinjaman kepada pihak JULO, adalah kewajiban dan tanggung
+                        jawab
+                        saya untuk membayar biaya keterlambatan atau denda sebesar <b>Rp.</b><span class="bold_txt late_fee_amount cash"></span>.
+                        <p>
+                            Denda Tambahan setelah 10 hari terlambat <b>Rp.</b><span class="late_fee_amount cash"></span>.</p>
+                        <p>
+                            Denda Tambahan setelah 30 hari terlambat <b>Rp.</b><span class="late_fee_amount cash"></span>.</p>
+                        <p>
+                            Denda Tambahan setiap kelipatan 30 hari berikutnya <b>Rp.</b><span class="late_fee_amount cash"></span>.</p>
+                    </li>
+
+                </ol>
+                <p>Pelunasan akan dilakukan ke rekening Virtual Account (VA) sebagai berikut:</p>
+
+                <div class="bank_details">
+                    <div class="inner">
+
+                        <p>
+
+                            <p class="julo_bank_name">
+
+                            </p>
+                        </p>
+
+                        <p>
+                            <span class="left_sec">
+                                Kode Bank
+                            </span>
+                            <span class="right_sec">
+                                <span class="bank_code">
+                                </span>
+                        </p>
+
+                        <p>
+                            <span class="left_sec">
+                                Nomor VA 
+                            </span>
+                            <span class="right_sec">
+                                <span class="julo_bank_account_number account_format"></span>
+                            </span>
+                        </p>
+
+
+                    </div>
+                </div>
+
+                <p class="custom_margin">
+                    Saya dan JULO wajib melaksanakan ketentuan yang diatur dalam Perjanjian ini dengan sebaik-baiknya
+                    serta
+                    senantiasa mematuhi ketentuan hukum yang berlaku dalam melaksanakan Perjanjian ini.
+                </p>
+                <p>
+                    Pertanyaan atau persoalan yang timbul karena penafsiran dan/atau pelaksanaan Perjanjian ini akan
+                    diselesaikan secara musyawarah dengan itikad baik untuk mencapai mufakat oleh para pihak.
+                </p>
+                <p>
+                    Surat perjanjian ini adalah sah dan mengikat sesuai dengan aturan KUH Perdata, dan saya
+                    menandatangani
+                    secara sadar dan tanpa paksaan dari pihak manapun.</p>
+
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <div id="error" style="display:none;">
+        <h1>Not Found</h1>
+        <p>The requested URL was not found on this server.</p>
+        <p>Additionally, a 404 Not Found
+            error was encountered while trying to use an ErrorDocument to handle the request.</p>
+    </div>
+    <footer>
+        <section class="cid-qMI4bymfZu" id="footer5-64">
+
+
+
+
+
+            <div class="container">
+
+
+                <div class="media-wrap mbr-logo">
+                    <a href="/index.html">
+                        <img src="/assets/vector/pinjaman_JULO_logo.svg" alt="Logo Pinjaman JULO" title="">
+                    </a>
+                </div>
+
+
+
+                <div class="footer-lower">
+
+                    <div class="col-md-12">
+                        <hr>
+                    </div>
+
+
+                    <div class="col-md-12 copyright">
+                        <p class="mbr-text mbr-fonts-style display-2">
+                            © Copyright 2018 PT JULO Teknologi Finansial - All Rights Reserved
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="mbr-section cid-qM3NeG6ij9 mbr-parallax-background">
+
+            <div class="container">
+                <div class="bottom_footer">
+                    <div class="left_f">
+                        <p style="margin-bottom:0;" class="center_text_mob">Terdaftar dan diawasi oleh</p>
+                        <div class="logo-ojk">
+                            <img src="/assets/vector/pinjaman_online_JULO_terdaftar_OJK.svg" alt="Pinjaman Online JULO Terdaftar OJK">
+                        </div>
+                        <p>PT. JULO TEKNOLOGI FINANSIAL merupakan perusahaan penyedia layanan pinjaman online yang
+                            terdaftar
+                            dan berada dalam pengawasan oleh Otoritas Jasa Keuangan (OJK) dengan nomor registrasi
+                            S-589/NB.213/2018
+                            sesuai dengan Hukum Republik Indonesia dan Peraturan Otoritas Jasa Keuangan nomor
+                            77/POJK.01/2016.
+                            Oleh karena itu, PT JULO TEKNOLOGI FINANSIAL berkomitmen untuk menjunjung tinggi integritas
+                            dan
+                            melaksanakan perlindungan konsumen sesuai dengan hukum yang berlaku.</p>
+                    </div>
+                    <div class="right_f">
+                        <div class="mc_logo"> <img src="/assets/images/McAfee.jpg"></div>
+                        <p>&copy; 2018 McAfee, LLC</p>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </footer>
+
+    <script src="/assets/web/assets/jquery/jquery.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="/assets/theme/js/loandetail.js"></script>
+</body>
+
+</html>

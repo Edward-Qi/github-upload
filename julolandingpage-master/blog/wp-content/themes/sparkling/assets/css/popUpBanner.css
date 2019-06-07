@@ -1,0 +1,80 @@
+/* Style for mobile popup */
+.appdownload {
+    float: left;
+    width: 100%;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0px;
+    margin-bottom: -50px;
+    z-index: 100;
+    background-color: white;
+    height: 69px;
+    border-radius: 0;
+    box-shadow: -3px -4px 15px rgba(0, 0, 0, 0.1);
+    transition: ease-in-out 0.3s;
+    opacity: 0;
+  }
+  .appdownload img {
+    float: left;
+    width: 39px;
+    margin-right: 10px;
+    position: absolute;
+    left: 15px;
+  }
+  .text_sc {
+    padding: 0 90px 0 44px;
+  }
+  .appdownload h5 {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  .appdownload p {
+    font-size: 12px;
+    font-weight: 500;
+    color: #333;
+    margin: 0px;
+    width: 100%;
+    white-space: initial;
+    text-overflow: initial;
+    overflow: visible;
+  }
+  .appdownload .app-button {
+    float: right;
+    width: 90px;
+    margin: 0px;
+    height: 30px;
+    padding: 0px 10px;
+    font-size: 11px;
+    background: linear-gradient(to right, #00acf0, #13637b);
+    border: none;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+  }
+  .appdownload .close {
+    width: 25px;
+    height: 25px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    left: 5px;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  .appdownload .close:hover {
+    opacity: 1;
+  }
+  .showpopup {
+    margin-bottom: 0px !important;
+    transition: ease-in-out 0.3s !important;
+    opacity: 1;
+  }
+
+.showpopup h5 {
+    margin-top: 0px;
+}

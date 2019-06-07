@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/css/custom.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/regular.css">
+    <link rel="stylesheet" href="/assets/css/all.css" >
+    <style type="text/css">
+ 
+        div#preloader {
+          position: fixed;
+          left: 0;
+          top: 0;
+          z-index: 999;
+          width: 100%;
+          height: 100%;
+          overflow: visible;
+          background: #333 url('/assets/images/loading.gif') no-repeat center center;
+       
+        }
+       
+  
+    </style>
+
+    <title>julo</title>
+  </head>
+  <body>
+
+        <div class="jumbotron">
+            <div class="logo"><img src="/assets/img/logo-primary.png" /></div>
+            <div class="container header">
+                <h2>Detail Pembayaran </h2>
+            </div>
+        </div>
+        <div id="preloader"></div>
+        <div id="summary_content">
+            <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>Yth. <span class="fullname"></span></p>
+                            <p>Saya Ani dari JULO ingin menyampaikan kabar baik!</p>
+                            <p>Apabila Anda membayar angsuran tepat waktu, Anda akan mendapatkan cashback sebesar <span class="payment_cashback_amount"></span>. Tapi jika Anda membayar angsuran Anda sebelum tanggal <span class="due_date"></span>, Anda akan mendapatkan Ekstra Cashback sebesar <span class="cashback_multiplier"></span> kali lipat.</p>
+                            <p>90% dari nasabah JULO telah berhasil mendapatkan Ekstra Cashback ini dengan membayar lebih awal.</p>
+                            <p>Angsuran ke <span class="payment_number"></span> Anda akan jatuh tempo pada <span class="maturity_date"></span> dengan rincian sebagai berikut :</p>
+                        </div>
+                    </div>
+                    <div class="billing-container">
+                    <h3>Rincian Tagihan</h3>
+                    <div class="row mb-3">
+                            <div class="col-6 themed-grid-col">
+                                <div class="billDetails">
+                                    <label>Nama :</label>
+                                    <p><span class="fullname"></span></p>
+                                </div>
+                            </div>
+                            <div class="col-6 themed-grid-col">
+                                <div class="billDetails">
+                                    <label>Tanggal Jatuh Tempo :</label>
+                                    <p><span class="due_date"></p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-12 themed-grid-col">
+                            <div class="billDetails">
+                                <label>Deskripsi :</label>
+                                <p class="Desc"></p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                      <div class="row mb-3">
+                        <div class="col-12 themed-grid-col">
+                                <div class="billDetails">
+                                <p>Total</p>
+                                <p class="due_amount"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+                
+            <div class="container">
+                    <div class="row" id="pymentdets">
+                            <div class="col-md-12">
+                                <p>Anda dapat melakukan pembayaran anda ke salah satu nomor rekening dibawah ini :</p>
+                            </div>
+                    </div>
+                        <div class="accordian-outer">
+                            <div class="accordion appendDiv" id="accordion">
+                            
+
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="row">
+                                <div class="col-md-12">
+                                    <p>Untuk mendapatkan informasi mengenai cara membayar tagihan Anda, tekan tombol dibawah :</p>
+                                </div>
+                        </div>
+                        <div class="row">
+                                <div class="col-md-12">
+                                  <button type="button" class="btn btn-outline-primary info-buton" onclick="redirects()">Informasi Cara Membayar</button>
+                                </div>
+                        </div>
+                        <div class="row">
+                                <div class="col-md-12">
+                                    <p>Jika Anda memiliki pertanyaan lebih lanjut, silakan hubungi tim kami di nomor:</p>
+                                </div>
+                        </div>
+                        <div class="row">
+                                <div class="col-md-12">
+                                    <p class="whatsapp-txt"><img src="/assets/img/sign-document-copy.png" class="Sign-Document-Copy"/>&nbsp;&nbsp;&nbsp;+62 816 1550 9550 (Whatsapp)</p>
+                                </div>
+                        </div>
+                        <div class="row">
+                                <div class="col-md-12">
+                                    <p>Terima Kasih atas perhatian Anda.</p>
+                                </div>
+                        </div>
+                        
+              
+                 </div>
+                
+            </div>
+        </div>
+        <div id="error" style="display:none;" class="container">
+            <div class="row">
+                <div class="col-md-12">
+                     <h1>Not Found</h1>
+                      <p>The requested URL  was not found on this server.</p>
+                      <p>Additionally, a 404 Not Found
+                    error was encountered while trying to use an ErrorDocument to handle the request.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-top">
+            <div class="logo-footer">
+                <img src="/assets/img/julo-primary-logo-blue.png"/>
+            </div>
+            <div class="copyright">
+                <p>
+                  © Copyright 2018 PT JULO Teknologi Finansial - All Rights Reserved
+                </p>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-area">
+                <p>Terdaftar dan diawasi oleh</p>
+                <img src="/assets/img/ojk-indonesia-banner.png" />
+                <div class="footer-conent">
+                    <p>PT. JULO TEKNOLOGI FINANSIAL merupakan perusahaan penyedia layanan pinjaman online yang terdaftar dan berada dalam pengawasan oleh Otoritas Jasa Keuangan (OJK) dengan nomor registrasi S-589/NB.213/2018 sesuai dengan Hukum Republik Indonesia dan Peraturan Otoritas Jasa Keuangan nomor 77/POJK.01/2016. Oleh karena itu, 
+                        PT JULO TEKNOLOGI FINANSIAL berkomitmen untuk menjunjung tinggi integritas dan melaksanakan perlindungan konsumen sesuai dengan hukum yang berlaku.</p>
+                </div>
+            </div>
+        </footer>
+   
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/assets/script/jquery-3.3.1.slim.min.js" ></script>
+    <script src="/assets/script/bootstrap.min.js"></script>
+    <script src="/assets/script/popper.min.js"></script>
+    <script src="/assets/web/assets/jquery/jquery.min.js"></script>
+    <script src="/assets/script/paymentdetail.js"></script>
+  </body>
+</html>

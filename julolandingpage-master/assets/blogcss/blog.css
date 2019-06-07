@@ -1,0 +1,38 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i);
+
+
+body {
+  font-style: normal;
+  line-height: 1.5;
+}
+
+/*blog template page*/
+.cid-blog_1 {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-image: url("../../../assets/images/blog/blog_1");
+}
+.cid-blog_1 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+}
+.cid-blog_1 .line {
+  background-color: #ffffff;
+  color: #ffffff;
+  align: center;
+  height: 2px;
+  margin: 0 auto;
+}
+.cid-blog_1 .section-text {
+  padding: 2rem 0;
+  color: #5e5e5e;
+}
+.cid-blog_1 .inner-container {
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .cid-blog_1 .inner-container {
+    width: 100% !important;
+  }
+}
